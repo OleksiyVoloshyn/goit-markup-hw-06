@@ -218,42 +218,15 @@ header{
 }
 */
 /*---------------introduction-------------*/
-@media (min-width: 768px){
-    .main-section-one {
-        padding: 112px 0 112px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people@2x.jpg);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-    }
-    .main-section-one-title {
-    font: 700 36px / 1.11111 "Roboto", sans-serif;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff;
-    width: 216px;
-    margin: 0 auto;
-    margin-bottom: 36px;
-    }
-}
-/*
-@media (min-resolution: 192dpi){
-        .main-section-one {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/people@2x.jpg);
-            }
-}
-*/
         .main-section-one {
             background-color: #2e2f42;
-            margin: 0 auto;
             padding: 72px 0 72px 0;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/people@1x.jpg);
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-size: cover;
+            margin: 0 auto;
         }
     
         .main-section-one-title {
@@ -291,7 +264,58 @@ header{
         button:focus {
             background-color: #404BBF
         }
-@import 'media'
+
+@media (min-width: 768px) {
+    .main-section-one {
+        padding: 112px 0 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people@2x.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    .main-section-one-title {
+        font: 700 56px / 1.07143 "Roboto", sans-serif;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        width: 496px;
+        margin: 0 auto;
+        margin-bottom: 36px;
+    }
+}
+@media (min-width: 1158px) {
+    .main-section-one {
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        max-width: 1158px;
+        margin: 0 auto;
+    }
+
+    .main-section-one-title {
+        font: 700 56px / 1.07143 "Roboto", sans-serif;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #fff;
+        max-width: 496px;
+        margin: 0 auto;
+        margin-bottom: 48px;
+
+    }
+}
+/*
+@media (min-resolution: 192dpi) {
+    .main-section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people@2x.jpg);
+    }
+}
+
 /*
 .main-section-one {
     background-color: #2e2f42;
@@ -337,52 +361,112 @@ button:focus {
 }
 */
 /* foundations of business */
-/*
-@media (min-width: 320px){
-    .main-section-two {
-        padding: 96px 0;
-        width: 320px;
-    }
-    .main-section-two-list {
-        display: flex;
-        flex-direction: column;
-        gap: 72px;
-    }
-    .main-section-two-titlename {
-        font: 700 36px / 1.11111 "Roboto", sans-serif;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
-    }
-    .section-two-icon {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-}
 
-.visually-hidden {
-    position: absolute;
+
+
+.main-section-two {
+    padding: 96px 0;
+    width: 320px;
+}
+.main-section-two-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+.main-section-two-titlename {
+    font: 700 36px / 1.11111 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2e2f42;
+}
+        
+.section-two-icon {
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
-    
+    white-space:inherit;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.visually-hidden { 
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.main-section-two-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+@media (min-width: 768px) {
+    .main-section-two {
+            padding: 96px 0;
+            width: 768px;
+        }
+    
+        .main-section-two-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+            row-gap: 72px;
+        }
+    
+        .main-section-two-titlename {
+            margin-bottom: 8px;
+        }
+    
+        .main-section-two-list-page {
+            flex-basis: calc((100% - 48px) / 2);
+        }
+}
+@media (min-width: 1158px) {
+    .main-section-two {
+            padding: 120px 0;
+            max-width: 1158px;
+        }
+        .main-section-two-list {
+            display: flex;
+            gap: 24px;
+        }
 
+        .section-two-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #8E8F99;
+            border-radius: 4px;
+            padding: 24px 0;
+            max-width: 264px;
+            max-height: 112px;
+            background-color: #F4F4FD;
+            margin-bottom: 8px;
+        }
+        .main-section-two-titlename {
+            margin-bottom: 8px;
+}
+
+    .main-section-two-list-page {
+    flex-basis: calc((100% - 72px) / 4);
+}
+        .section-two-icon:hover {
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+    
+        .section-two-icon:focus {
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+}
+/*
 .main-section-two {
     padding: 120px 0;
 }
