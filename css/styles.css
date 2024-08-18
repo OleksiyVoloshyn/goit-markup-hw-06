@@ -821,6 +821,7 @@ flex-shrink: 0;
 }
 .main-section-four-list {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 360px;
 }
 .main-section-four-list-category {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -870,6 +871,7 @@ flex-shrink: 0;
 .main-section-four-titlename {
     margin-bottom: 8px;
 }
+
 @media (min-width: 768px) {
     .main-section-four-pages-title {
         flex-direction: row;
@@ -878,7 +880,7 @@ flex-shrink: 0;
             row-gap: 72px;
         }
     .main-section-four-list {
-    max-width: 360px;
+    
     flex-basis: calc((100% - 24px) / 2);
     }
 }
