@@ -1001,11 +1001,11 @@ flex-shrink: 0;
     justify-content: center;
     align-items: center;
 }
-        .form-subscribe {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.form-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .footer-input {
     border: 1px solid #fff;
     border-radius: 4px;
@@ -1414,7 +1414,7 @@ footer {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
-/*-------------------Model_Overlay_Menu-------------------------*/
+/*-------------------Model_Overlay_Menu_mobile-------------------------*/
 
 .model_overlay_menu {
     background-color: rgba(46, 47, 66, 0.4);
@@ -1538,13 +1538,13 @@ footer {
 .social-links-list-menu :focus {
     background-color: #31d0aa;
 }
-/*-------------------Model_Overlay_Menu_mobile-------------------------*/
+/*-------------------Model_Overlay_Menu-------------------------*/
 .model_overlay_mobile {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 100%;
     z-index: 999;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
@@ -1568,7 +1568,7 @@ footer {
                 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1724,3 +1724,188 @@ footer {
     cursor: pointer;
 }
 
+/*-------------------Model_Overlay_Menu-------------------------*/
+.model_overlay_tablet {
+    background-color: rgba(46, 47, 66, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+/*
+.model_overlay_tablet.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+*/
+.model_tablet {
+    background-color: #fff;
+    padding: 112px 24px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 
+                0 1px 3px 0 rgba(0, 0, 0, 0.12), 
+                0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button_tablet {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.close-button_tablet:hover{
+    background-color: #404BBF;
+    border: none;
+    fill: #ffffff 
+}
+.close-button_tablet:focus{
+    background-color: #404BBF;
+    border: none;
+    fill: #ffffff
+}
+.close-icon_tablet{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text_contact_tablet {
+    font: 500 16px / 1.5 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+.form-contacts_tablet{
+    margin-bottom: 8px;
+}
+.user_label_tablet {
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+    font: 400 12px / 1.16667 "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    position: relative;
+    line-height: 1.17;
+}
+.user_label_tablet:nth-child(4){
+    margin-bottom: 16px;
+}
+.container-input_tablet {
+    position: relative;
+}
+.user_info_tablet{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 38px;
+    background-color: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user_info_tablet:focus{
+    border-color: #4D5AE5;
+}
+.input_icon_tablet {
+    position: absolute;
+    left: 16px;
+    top:50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user_info_tablet:focus ~ .input_icon_mobile {
+    fill: #4D5AE5;
+}
+.form-contacts-comment_tablet {
+    margin-bottom: 16px;
+}
+.user_comment_tablet {
+    width: 100%;
+    height: 120px;
+    line-height: 1.17;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user_comment_tablet:focus {
+    border-color: #4D5AE5;
+}
+.checkbox_tablet {
+    margin-bottom: 24px;
+}
+.checkbox-label_tablet {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+.checkbox-span_tablet {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox-svg_tablet {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.checkbox_tablet input:checked ~ label span {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+}
+.privacy_tablet {
+    color: #4d5ae5;
+    text-decoration:underline;
+}
+.form-button_tablet {
+    display: block;
+    margin:0 auto;
+    font: 500 16px / 1.5 "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    background: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
