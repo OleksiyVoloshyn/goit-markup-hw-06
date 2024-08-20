@@ -143,10 +143,9 @@ header {
 }
 /*ADDRESS*/
 .header-address {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font: 400 12px / 1.16667 "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+    color: #434455;
     font-style: normal;
     display: none;
 }
@@ -505,8 +504,9 @@ button:focus {
 .main-section-two-titlename {
     font: 700 36px / 1.11111 "Roboto", sans-serif;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
         
 .section-two-icon {
@@ -524,9 +524,7 @@ button:focus {
     overflow: hidden;
 }
 .main-section-two-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font: 500 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -638,6 +636,7 @@ button:focus {
 .main-section-three-list-title {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 72px;
 }
 .main-section-three-list {
@@ -826,6 +825,7 @@ flex-shrink: 0;
 .main-section-four-pages-title {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 48px;
 }
 .main-section-four-list {
@@ -940,8 +940,6 @@ flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 72px;
 }
 .footer-web-logo {
     font-family: "Raleway", sans-serif;
@@ -1067,6 +1065,7 @@ flex-shrink: 0;
     .footer-web .container {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 72px 24px;
     }
     .footer-social-link {
         margin: 0;
