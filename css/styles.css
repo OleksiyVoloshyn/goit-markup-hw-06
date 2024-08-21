@@ -61,11 +61,20 @@ section {
     padding: 0;
 }
 .container { 
-    max-width: 1158px;
+    max-width: 320px;
     padding: 0 15px;
     margin: 0 auto;
     }
-
+@media (min-width: 768px) {
+    .container {
+    max-width: 768px;
+    }
+}
+@media (min-width: 1158px) {
+    .container { 
+    max-width: 1158px;
+    }
+}
 /*--------------------HEADER----------------------*/
 header {
     border-bottom: 1px solid #e7e9fc;
@@ -538,7 +547,6 @@ button:focus {
     .main-section-two {
         padding: 96px 0;
     }
-    
     .main-section-two-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -548,6 +556,7 @@ button:focus {
     
     .main-section-two-titlename {
         margin-bottom: 8px;
+        text-align: left;
     }
     .main-section-two-list-page {
         flex-basis: calc((100% - 48px) / 2);
@@ -555,7 +564,7 @@ button:focus {
 }
 @media (min-width: 1158px) {
     .main-section-two {
-        padding: 120px 156px;
+        padding: 120px 0hpx;
     }
         .main-section-two-list {
         flex-wrap: nowrap;
@@ -576,7 +585,14 @@ button:focus {
     margin-bottom: 8px;
     }
     .main-section-two-titlename {
+        font: 500 20px / 1.2 "Roboto", sans-serif;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
         margin-bottom: 8px;
+    }
+    .main-section-two-text {
+        font-weight: 400;
+        color: #434455;
     }
     .main-section-two-list-page {
     flex-basis: calc((100% - 24px) / 4);
@@ -931,6 +947,7 @@ flex-shrink: 0;
 .footer-web .container {
     display: flex;
     flex-direction: column;
+
 }
 .footer-web {
     background-color: #2e2f42;
@@ -940,6 +957,7 @@ flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 75px;
 }
 .footer-web-logo {
     font-family: "Raleway", sans-serif;
@@ -951,6 +969,7 @@ flex-shrink: 0;
     text-decoration: none;
     color: #4d5ae5;
     display: inline-block;
+    margin: 0 auto;
     margin-bottom: 16px;
 }
 .footer-web-logo-span {
@@ -1061,6 +1080,9 @@ flex-shrink: 0;
     .footer-web {
         padding-left: 108px;
         padding-right: 108px;
+    }
+    .container-footer-logo {
+        margin-bottom:unset;
     }
     .footer-web .container {
         flex-direction: row;
